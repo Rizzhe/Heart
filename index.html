@@ -6,20 +6,20 @@
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
   
   <style>
-    /* Popup styling */
-    .popup {
+    /* Centered Greeting */
+    .greeting {
       position: fixed;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      background: rgba(255, 77, 77, 0.9);
-      color: white;
       font-family: 'Dancing Script', cursive;
-      font-size: 32px;
+      font-size: 40px;
+      color: #ff4d4d;
+      text-align: center;
+      background: rgba(255, 255, 255, 0.8);
       padding: 20px;
       border-radius: 10px;
-      text-align: center;
-      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
       animation: fadeOut 3s ease-in-out forwards;
     }
 
@@ -60,10 +60,7 @@
 </head>
 <body>
 
-  <!-- Popup message -->
-  <div class="popup" id="popup">
-    <p>Good afternoon Alangkrita!</p>
-  </div>
+  <h1 class="greeting">Good afternoon Alangkrita!</h1>
 
   <div class="envelope-wrapper">
     <div id="envelope" class="close">
@@ -92,7 +89,7 @@
   <script>
     $(document).ready(function() {
       setTimeout(function() {
-        $('#popup').fadeOut();
+        $('.greeting').fadeOut();
       }, 3000);
     });
   </script>
