@@ -3,64 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <title>Dia dos Namorados</title>
+  <link rel="stylesheet" href="./style.css">
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
-  
-  <style>
-    /* Centered Greeting */
-    .greeting {
-      position: fixed;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      font-family: 'Dancing Script', cursive;
-      font-size: 40px;
-      color: #ff4d4d;
-      text-align: center;
-      background: rgba(255, 255, 255, 0.8);
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-      animation: fadeOut 3s ease-in-out forwards;
-    }
-
-    @keyframes fadeOut {
-      0% { opacity: 1; }
-      100% { opacity: 0; display: none; }
-    }
-
-    /* Envelope styles */
-    .envelope-wrapper {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
-
-    .reset {
-      text-align: center;
-      margin-top: 20px;
-    }
-
-    button {
-      font-size: 18px;
-      padding: 10px 20px;
-      margin: 5px;
-      border: none;
-      cursor: pointer;
-      background-color: #ff4d4d;
-      color: white;
-      border-radius: 5px;
-    }
-
-    button:hover {
-      background-color: #cc0000;
-    }
-  </style>
-
 </head>
 <body>
 
-  <h1 class="greeting">Good afternoon Alangkrita!</h1>
+  <h1 class="greeting">Good morning Alangkrita!</h1>
 
   <div class="envelope-wrapper">
     <div id="envelope" class="close">
@@ -86,13 +34,4 @@
   </div>
 
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
-  <script>
-    $(document).ready(function() {
-      setTimeout(function() {
-        $('.greeting').fadeOut();
-      }, 3000);
-    });
-  </script>
-
-</body>
-</html>
+  <script src="./script.js"></script> 
